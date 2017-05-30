@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>experiment_tutorial-Copy1</title>
+<title>experiment_tutorial</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -12790,7 +12790,7 @@ R9vj/HXAAAAAAElFTkSuQmCC
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Running-Experiments,-showing-output">Running Experiments, showing output<a class="anchor-link" href="#Running-Experiments,-showing-output">&#182;</a></h1><p>Now, suppose our simulation takes a long time to run.  We would like to record our results so that we review them later without having to re-run the experiment.  We can achieve this by decorating our experiment with the "<code>@experiment_function</code>" decordator.  The decorator registers the function <code>demo_drunkards_walk</code>, as an "experiment", which allows us to capture its output when it is run:</p>
+<h2 id="Running-Experiments">Running Experiments<a class="anchor-link" href="#Running-Experiments">&#182;</a></h2><p>Now, suppose our simulation takes a long time to run.  We would like to record our results so that we review them later without having to re-run the experiment.  We can achieve this by decorating our experiment with the "<code>@experiment_function</code>" decordator.  The decorator registers the function <code>demo_drunkards_walk</code>, as an "experiment", which allows us to capture its output when it is run:</p>
 
 </div>
 </div>
@@ -13805,7 +13805,7 @@ Finished running 1 experiment.
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Now if we want to go back later and see these results, we can enter the UI again and enter <code>show 0</code>:</p>
+<h2 id="Viewing-Results-of-Experiments">Viewing Results of Experiments<a class="anchor-link" href="#Viewing-Results-of-Experiments">&#182;</a></h2><p>Now if we want to go back later and see these results, we can enter the UI again and enter "<code>show 0</code>" meaning "show the results of experiment 0":</p>
 
 </div>
 </div>
@@ -17049,7 +17049,7 @@ X.add_variant(n_dim=3)</code></pre>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Separating-Display-and-Computation">Separating Display and Computation<a class="anchor-link" href="#Separating-Display-and-Computation">&#182;</a></h2><p>The above is ok if our experiments run quickly and we just want to plot what the drunkards are doing.  But we may want to do some other analysis on our results after running the experiment (without having to start again).  Or we may simply want to change our style of plotting after.  In these cases, it becomes beneficial to separate plotting from computing the results.  We can use the <code>display_function</code> argument to do this.  This display_function should accept the return value of your experiment as its first argument.</p>
+<h2 id="Separating-Display-and-Computation">Separating Display and Computation<a class="anchor-link" href="#Separating-Display-and-Computation">&#182;</a></h2><p>The above is ok if our experiments run quickly and we just want to plot what the drunkards are doing.  But we may want to do some other analysis on our results after running the experiment (without having to start again).  Or we may simply want to change the way we plot our results, without having to re-run everythign.  In these cases, it becomes beneficial to separate plotting from computing the results.  We can use the <code>display_function</code> argument to do this.  This display_function should accept the return value of your experiment as its first argument.</p>
 
 </div>
 </div>
@@ -17125,7 +17125,7 @@ X.add_variant(n_dim=3)</code></pre>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Then browse through our results, and view the results of experiment 1 by entering "<code>results 1</code>".</p>
+<p>Then browse through our results, and view the results of experiment 1: "<code>demo_drunkards_walk.homing_instinct=0.01</code>", by entering "<code>results 1</code>".</p>
 
 </div>
 </div>
